@@ -7,12 +7,12 @@ import { Container } from "@mui/material";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
-// import { styled } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import Slider from "react-slick";
 import { ListChildComponentProps } from "react-window";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import "../index.css";
 
 const Item = styled(Paper)(({ theme }) => ({
