@@ -12,7 +12,6 @@ import Slider from "react-slick";
 import { ListChildComponentProps } from "react-window";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import { createGlobalStyle } from "styled-components";
 import "../index.css";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -23,11 +22,11 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const GlobalStyle = createGlobalStyle`
-  body, html {
-    background-color: #f5f5f7; 
-  }
-`;
+// const GlobalStyle = createGlobalStyle`
+//   body, html {
+//     background-color: #f5f5f7; 
+//   }
+// `;
 
 
 const itemData = [
@@ -279,7 +278,6 @@ function renderCard(props: ListChildComponentProps) {
 export default function IndexPage() {
   return (
     <>
-      <GlobalStyle />
       <Container fixed>
         <Box
           sx={{
